@@ -294,6 +294,15 @@ footer {
     justify-content: center;
     gap: var(--spacing-medium);
     list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.project-technologies ul li {
+    margin: var(--spacing-small);
+    background-color: var(--color-background);
+    padding: var(--spacing-small) var(--spacing-medium);
+    border-radius: 20px;
+    white-space: nowrap;
 }
 
 .project-tasks {
@@ -307,6 +316,7 @@ footer {
     margin-bottom: var(--spacing-small);
     position: relative;
     padding-left: var(--spacing-medium);
+    list-style-type: none;
 }
 
 .project-tasks li::before {
@@ -360,5 +370,13 @@ footer {
     .project-cta {
         flex-direction: column;
         align-items: center;
+    }
+    .project-technologies ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-technologies ul li {
+        margin: var(--spacing-small) 0;
     }
 }
